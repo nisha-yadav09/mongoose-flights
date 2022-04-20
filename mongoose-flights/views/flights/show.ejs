@@ -47,3 +47,28 @@
 <% } else { %>
   <h5>No Arrival Airport Yet</h5>
 <% } %>
+
+<br><br>
+<h2>Tickets</h2>
+<a href="/flights/<%= flight._id %>/tickets/new">New Ticket</a>
+
+
+<% if (tickets.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Tickets</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% tickets.forEach(function(t) { %>
+        <tr>
+          <td><%= t.seat %></td>
+          <td><%= t.price %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<% } else { %>
+  <h5>No Tickets Yet</h5>
+<% } %>
