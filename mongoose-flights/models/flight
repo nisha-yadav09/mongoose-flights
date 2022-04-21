@@ -33,10 +33,11 @@ const flightSchema = new Schema({
     max: 9999
   },
   departs: {
-    type: String,
+    type: Date,
     default: function () {
       let date = new Date();
-      return `${date.getFullYear() + 1} - ${date.getMonth() + 1} - ${date.getDate()} ${date.getHours()}:${date.getMinutes()}`.toString();
+      return date.setFullYear(date.getFullYear() + 1);
+      //return `${date.getFullYear() + 1} - ${date.getMonth() + 1} - ${date.getDate()} ${date.getHours()}:${date.getMinutes()}`.toString();
     }
   },
   destination: [destinationSchema]
