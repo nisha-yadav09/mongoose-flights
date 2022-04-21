@@ -12,7 +12,7 @@ New Flight
 Ticket Page - Regex
 ![Imgur](https://i.imgur.com/2sZGnIV.png)
 
-New Ticket ANd Destination
+New Ticket And Destination
 ![Imgur](https://i.imgur.com/t42TM5n.png)
 
 Delete Ticket
